@@ -1,7 +1,6 @@
-cat << 'EOF' > compose.yaml
 services:
   kuma-backup:
-    build: .
+    build: https://github.com/Sergey125/uptime-kuma-v2-backup-ui.git
     image: kuma-backup-tool:latest
     container_name: kuma-backup-tool
     restart: unless-stopped
@@ -11,4 +10,3 @@ services:
       - "host.docker.internal:host-gateway"
     environment:
       - KUMA_URL=http://host.docker.internal:3001
-EOF
