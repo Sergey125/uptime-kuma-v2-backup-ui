@@ -1,5 +1,7 @@
 # Uptime Kuma v2 Backup & Restore Web UI
 
+A lightweight web tool to **export and import Uptime Kuma v2 monitor backups (JSON)** via its API — no manual `kuma.db` handling required. Docker & [Dockge](https://github.com/louislam/dockge) ready.
+
 Простой и легковесный веб-интерфейс для экспорта и импорта резервных копий конфигураций (в формате JSON) для **Uptime Kuma v2.x**.
 
 ---
@@ -118,3 +120,9 @@ docker compose up -d --build
 - **Backend:** Python 3.12, FastAPI, Uvicorn
 - **API-клиент:** [uptime-kuma-api](https://github.com/lucasheld/uptime-kuma-api)
 - **Окружение:** Docker (Debian slim)
+
+---
+
+## 📄 Лицензия
+
+[MIT](LICENSE)
