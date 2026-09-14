@@ -1,0 +1,14 @@
+cat << 'EOF' > compose.yaml
+services:
+  kuma-backup:
+    build: .
+    image: kuma-backup-tool:latest
+    container_name: kuma-backup-tool
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - KUMA_URL=http://host.docker.internal:3001
+EOF

@@ -1,0 +1,6 @@
+cat << 'EOF' > requirements.txt
+fastapi>=0.110.0
+uvicorn>=0.28.0
+python-multipart>=0.0.9
+uptime-kuma-api>=1.2.0
+EOF
