@@ -1,4 +1,4 @@
-cat << 'EOF' > /opt/stacks/kuma-backup-tool/README.md
+
 # Uptime Kuma v2 Backup & Restore Web UI
 
 Простой и легковесный веб-интерфейс для экспорта и импорта резервных копий конфигураций (в формате JSON) для **Uptime Kuma v2.x**.
